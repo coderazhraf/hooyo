@@ -5,9 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./assest/style.css">
 </head>
 <body>
-<h1>hallo wolrd</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ipsa quis, incidunt perspiciatis tempore facere? Itaque delectus debitis asperiores voluptatibus praesentium in atque similique eligendi quasi illo. Expedita quisquam sapiente suscipit iste sed saepe, nulla recusandae nisi voluptatem deleniti.</p>
+
+    <div class="header">
+ <div class="logo">Ahmed</div>
+  <div class="nav">
+      <div class="closeNav" onclick="closeNav()"></div>
+  </div>
+ <div class="openNav" onclick="openNav()">open</div>
+    </div>
+
+
+    <script>
+
+        let nav = document.querySelector(".nav");
+
+        function openNav(){
+            nav.style.display = "block";
+        }
+        function closeNav(){
+            nav.style.display = "none";
+        }
+    </script>
 </body>
 </html>
